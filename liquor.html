@@ -26,12 +26,37 @@
       <div class="container">
         <div class="columns is-centered is-two-thirds">
           <div class="search-div">
-            <label class="label">Search drinks by ingredient</label>
+            <label class="label">Search drinks by ingredient<br>(Example: vodka, lemon, rum, sour mix, etc.)</label>
             <input class="input ingredient-input" type="text" placeholder="type your ingredient here...">
-            <button class="button is-primary search-button">Search</button>
+            <button class="button is-primary is-fullwidth search-button">Search</button>
         </div>
         </div>
+        <div class="columns is-centered is-two-thirds is-multiline instruction-div"></div>
         <div class="columns is-centered is-two-thirds is-multiline recipe-div"></div>
+      </div>
+      <!-- modal pops up when drink image clicked -->
+      <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <div class="box">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img class="modal-drink-img" alt="Drink Image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p class="drink-name">drink name</p>
+                  <p class="glass-type">glass type</p>
+                  <ul class="ingredients">Ingredients</ul>
+                  <p class="recipe">recipe goes here</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
       </div>
     </section>
     
