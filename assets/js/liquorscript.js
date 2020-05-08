@@ -1,9 +1,13 @@
-// when search button is clicked:
+// search button is clicked:
 $(".search-button").on("click", function () {
+    // empty the recipe-div and instructions div if there is already text there from a previous search
   $(".recipe-div").empty();
   $(".instruction-div").empty();
+
+
   var ingredientInput = $(".ingredient-input").val();
   var urlOne = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ingredientInput}`;
+
   //  ajax request to get drink name, image, and drink id.
   $.get(urlOne).then(function (response) {
     console.log(response);
@@ -69,6 +73,7 @@ $(".search-button").on("click", function () {
           drinkinfo.strIngredient14,
           drinkinfo.strIngredient15,
         ];
+        console.log(ingredientArray);
         // Array of all the measurements for each ingredient from the ajax response
         var measurementsArray = [
           drinkinfo.strMeasure1,
@@ -89,10 +94,19 @@ $(".search-button").on("click", function () {
         ];
 
         // For each measurement in the measurement array, create a table row, with 2 <td> elements.  One for the measurement from the measurementArray, and one for the corresponding ingredient from the ingredient Array and append it to the table body.
+        // var i = 0;
+        // measurementsArray.forEach(function(measurement){
+        //     if (measurement != null) {
+        //         var tablerow = $("<tr>").append($("<td>").text(measurement)).append($("<td>").text(ingredientArray[i]));
+        //         $(".table-body").append(tablerow);
+        //         i++;
+        //     }
+        // });
+
         var i = 0;
-        measurementsArray.forEach(function(measurement){
-            if (measurement != null) {
-                var tablerow = $("<tr>").append($("<td>").text(measurement)).append($("<td>").text(ingredientArray[i]));
+        ingredientArray.forEach(function(ingredient){
+            if (ingredient != null) {
+                var tablerow = $("<tr>").append($("<td>").text(measurementsArray[i])).append($("<td>").text(ingredient));
                 $(".table-body").append(tablerow);
                 i++;
             }
@@ -101,7 +115,7 @@ $(".search-button").on("click", function () {
         // render the image, drink name, glass type, and recipe to the modal
         $(".modal-drink-img").attr("src", modalImgSrc);
         $(".drink-name").text(modalDrinkName);
-        $(".glass-type").text(modalGlassType);
+        $(".glass-type").text(`You should serve this in a(n): ${modalGlassType}`);
         $(".recipe").text(modalRecipe);
       });
     });
