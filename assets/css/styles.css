@@ -1,3 +1,15 @@
-.center {
+.text-center {
   text-align: center;
+}
+
+.display-table {
+  display: table;
+}
+
+.header-margin {
+  margin: 20px;
+}
+
+.card-footer {
+  padding: 10px;
 }
