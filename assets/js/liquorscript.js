@@ -94,15 +94,6 @@ $(".search-button").on("click", function () {
         ];
 
         // For each measurement in the measurement array, create a table row, with 2 <td> elements.  One for the measurement from the measurementArray, and one for the corresponding ingredient from the ingredient Array and append it to the table body.
-        // var i = 0;
-        // measurementsArray.forEach(function(measurement){
-        //     if (measurement != null) {
-        //         var tablerow = $("<tr>").append($("<td>").text(measurement)).append($("<td>").text(ingredientArray[i]));
-        //         $(".table-body").append(tablerow);
-        //         i++;
-        //     }
-        // });
-
         var i = 0;
         ingredientArray.forEach(function(ingredient){
             if (ingredient != null) {
