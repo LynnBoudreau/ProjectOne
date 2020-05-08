@@ -1,5 +1,6 @@
 
 $(".search-button").on("click", function(){
+    $(".recipe-div").empty();
     var ingredientInput = $(".ingredient-input").val();
     var urlOne = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ingredientInput}`;
      
