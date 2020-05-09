@@ -43,7 +43,9 @@
 
 .liquor-body {
   background-color: #C9A207;
+  min-height: 900px;
 }
+
 .liquor-section {
   background-color: #4C494F;
 }
@@ -70,7 +72,7 @@
 }
 
 .search-div {
-  margin-left: 300px;
+  margin-left: 20%;
 }
 
 .foot {
@@ -78,4 +80,6 @@
   left: 0;
   bottom: 0;
   width: 100%;
+  background-color: #E4E9EA;
+  height: 50px;
 }
