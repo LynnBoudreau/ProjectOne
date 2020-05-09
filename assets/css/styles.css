@@ -41,23 +41,35 @@
   height: 350px;
 }
 
-.liquor-body {
-  background-color: #C9A207;
+.section-cocktail {
+  padding-top: 0;
+  padding-bottom: 0;
 }
+
+.liquor-body {
+  background-color: #A17302;
+  min-height: 900px;
+  padding-bottom: 50px;
+}
+
 .liquor-section {
   background-color: #4C494F;
+  padding-bottom: 25px;
 }
 
 .cocktail-div {
   padding: 5px;
   margin: 5px;
   border: 1px solid black;
-  border-radius: 5px;
+  border-radius: 15px;
   text-align: center;
+  background-color: #C6B75E;
+  color: black;
 }
 
 .instruction-div {
   padding: 10px;
+  color: white;
 }
 
 .liquor-center {
@@ -70,7 +82,12 @@
 }
 
 .search-div {
-  margin-left: 300px;
+  margin-left: 20%;
+  margin-right: 50%;
+}
+
+.recipe-div {
+  min-height: 500px;
 }
 
 .foot {
@@ -78,4 +95,10 @@
   left: 0;
   bottom: 0;
   width: 100%;
+  background-color: #E4E9EA;
+  height: 50px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 13px;
+  color: black;
 }
