@@ -9,7 +9,7 @@ var breweryUrl = `https://api.openbrewerydb.org/breweries/?by_city=${cityInput}&
 var lonLatLocation = [];
 
 // Create a button and event listener for that button
-$("").on("click", function (e) {
+$("#submitButton").on("click", function (e) {
   e.preventDefault();
 
   // Grab input from the city and state input boxes
