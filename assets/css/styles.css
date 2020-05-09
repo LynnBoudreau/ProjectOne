@@ -32,3 +32,50 @@
   font-size: 40px;
   color: red;
 }
+
+.input-search {
+  background-image: url("/assets/images/Screen\ Shot\ 2020-05-09\ at\ 11.35.46\ AM.png");
+  background-size: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+.liquor-body {
+  background-color: #C9A207;
+}
+.liquor-section {
+  background-color: #4C494F;
+}
+
+.cocktail-div {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.instruction-div {
+  padding: 10px;
+}
+
+.liquor-center {
+  margin: 10px;
+  text-align: center;
+}
+
+.label-text {
+  color: white;
+}
+
+.search-div {
+  margin-left: 300px;
+}
+
+.foot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

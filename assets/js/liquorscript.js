@@ -21,8 +21,12 @@ $(".search-button").on("click", function () {
         width: "150px",
         class: "drink-button",
       });
-      var cocktailNameP = $("<p>").text(drink.strDrink);
-      var cocktailDivEl = $("<div>");
+      var cocktailNameP = $("<p>", {
+          class: "text-center"
+      }).text(drink.strDrink);
+      var cocktailDivEl = $("<div>", {
+          class: "cocktail-div"
+      });
       // append new <p> and <img> elements to the new <div>, and append the new <div> to the .recipe-div
       cocktailDivEl.append(cocktailNameP, drinkImgEl);
       $(".recipe-div").append(cocktailDivEl);
