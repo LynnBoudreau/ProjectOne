@@ -15,7 +15,6 @@
       <div class="navbar-brand">
           <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
       </div>
-    
       <div id="navbarBasicExample" class="navbar-end">
         <div class="navbar-end">
           <a class="navbar-item">
@@ -26,8 +25,47 @@
     <section class="section">
       <div class="container">
         <div class="columns is-centered is-two-thirds">
-          Insert Stuff here
+          <div class="search-div">
+            <label class="label">Search drinks by ingredient<br>(Example: vodka, lemon, rum, sour mix, etc.)</label>
+            <input class="input ingredient-input" type="text" placeholder="type your ingredient here...">
+            <button class="button is-primary is-fullwidth search-button">Search</button>
         </div>
+        </div>
+        <div class="columns is-centered is-two-thirds is-multiline instruction-div"></div>
+        <div class="columns is-centered is-two-thirds is-multiline recipe-div"></div>
+      </div>
+      <!-- modal pops up when drink image clicked -->
+      <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <div class="box">
+            <article class="media">
+              <div class="media-left">
+                <figure class="image is-64x64">
+                  <img class="modal-drink-img" alt="Drink Image">
+                </figure>
+              </div>
+              <div class="media-content">
+                <div class="content">
+                  <p class="drink-name title">drink name</p>
+                  <p class="glass-type">glass type</p>
+                  <!-- ingredient table -->
+                  <table class="table ingredients-table">
+                    <thead>
+                      <tr>
+                        <th>Amount</th>
+                        <th>Ingredient</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-body"></tbody>
+                  </table>
+                  <p class="recipe">recipe goes here</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
       </div>
     </section>
     
@@ -48,6 +86,6 @@
       defer
       src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
     ></script>
-    <script src="/assets/js/liquorscript.js"></script>
+    <script src="./assets/js/liquorscript.js"></script>
   </body>
 </html>
