@@ -1,5 +1,5 @@
 // Make a div that will contain the google map
-var mapsEl = $("");
+var mapsEl = $("#mapEl");
 
 var googleApiKey = "AIzaSyADK5Lk6M5yKgWBra5haAe7z-e_l-PlFdE";
 
@@ -9,12 +9,12 @@ var breweryUrl = `https://api.openbrewerydb.org/breweries/?by_city=${cityInput}&
 var lonLatLocation = [];
 
 // Create a button and event listener for that button
-$("").on("click", function (e) {
+$("#submitButton").on("click", function (e) {
   e.preventDefault();
 
   // Grab input from the city and state input boxes
-  var cityInput = $("").val();
-  var stateInput = $("").val();
+  var cityInput = $("#city").val();
+  var stateInput = $("#state").val();
 
   // Start the ajax call for the brewery api
   $.get(breweryUrl).then(function (response) {
@@ -38,7 +38,7 @@ $("").on("click", function (e) {
       var brewAddress = response[i].street;
 
       // we need a div that will contain the brewery info
-      var brewInfoEl = $("");
+      var brewInfoEl = $("#breweryEl");
 
       // create a new div for each brewery
       var brewResponseEl = $("<div>", {
