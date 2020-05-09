@@ -1,6 +1,6 @@
 // search button is clicked:
 $(".search-button").on("click", function () {
-    // empty the recipe-div and instructions div if there is already text there from a previous search
+    // empty the .recipe-div and .instruction-div if there is already text there from a previous search
   $(".recipe-div").empty();
   $(".instruction-div").empty();
 
