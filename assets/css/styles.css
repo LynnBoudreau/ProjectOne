@@ -24,8 +24,16 @@
 }
 
 .index-img {
-  height: 300px;
-  width: 300px;
+  height: 188px;
+  width: 268px;
+}
+
+.beer-index-img {
+  padding-right: 300px;
+}
+
+.cocktail-index-img {
+  padding-left: 300px;
 }
 
 .follow-directions {
@@ -46,13 +54,13 @@
   padding-bottom: 0;
 }
 
-.liquor-body {
+.body {
   background-color: #a17302;
   min-height: 900px;
   padding-bottom: 50px;
 }
 
-.liquor-section {
+.bb-container {
   background-color: #4c494f;
   padding-bottom: 25px;
 }
@@ -97,10 +105,16 @@
   width: 100%;
   background-color: #e4e9ea;
   height: 50px;
+  color: black;
+  font-size: 13px;
   text-align: center;
   padding-top: 15px;
-  font-size: 13px;
-  color: black;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  padding: 15px;
 }
 
 .beer-section {
