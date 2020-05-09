@@ -51,7 +51,7 @@ $("#submitButton").on("click", function (e) {
       var addressEl = $("<li>").text(`Address: ${brewAddress}`);
       brewUl.append(nameEl, typeEl, addressEl);
       brewResponseEl.append(brewUl);
-      brewInfoEl.append(brewREl);
+      brewInfoEl.append(brewResponseEl);
 
       // push the brewery locations into the lonLat array to be used in the map source
       lonLatLocation.push(brewLocation);
