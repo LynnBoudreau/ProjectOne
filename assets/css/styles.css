@@ -49,7 +49,7 @@
   height: 350px;
 }
 
-.section-cocktail {
+.bb-section {
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -63,6 +63,12 @@
 .bb-container {
   background-color: #4c494f;
   padding-bottom: 25px;
+}
+
+.index-container {
+  height: 900px;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .cocktail-div {
@@ -114,4 +120,16 @@
   height: 80px;
   width: 80px;
   padding: 15px;
+}
+
+.beer-section {
+  background-color: #a17302;
+}
+
+.beer-container {
+  background-color: #4c494f;
+}
+
+.brewery-title {
+  color: white;
 }
