@@ -13,3 +13,12 @@
 .card-footer {
   padding: 10px;
 }
+
+.grounded {
+  text-align: center;
+}
+
+.yoda-img {
+  height: 300px;
+  width: 300px;
+}
