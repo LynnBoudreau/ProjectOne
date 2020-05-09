@@ -42,10 +42,11 @@
 }
 
 .liquor-body {
-  background-color: #C9A207;
+  background-color: #c9a207;
+  min-height: 900px;
 }
 .liquor-section {
-  background-color: #4C494F;
+  background-color: #4c494f;
 }
 
 .cocktail-div {
@@ -78,4 +79,12 @@
   left: 0;
   bottom: 0;
   width: 100%;
+  background-color: lightblue;
+  height: 50px;
+}
+
+.logo {
+  height: 80px;
+  width: 80px;
+  padding: 15px;
 }
