@@ -93,7 +93,7 @@ $(".search-button").on("click", function () {
           drinkinfo.strMeasure15,
         ];
 
-        // For each measurement in the measurement array, create a table row, with 2 <td> elements.  One for the measurement from the measurementArray, and one for the corresponding ingredient from the ingredient Array and append it to the table body.
+        // For each ingredient in the ingredientArray, create a table row, with 2 <td> elements.  One for the corresponding measurement from the measurementArray, and one for the ingredient from the ingredientArray. Then append it to the table body.
         var i = 0;
         ingredientArray.forEach(function(ingredient){
             if (ingredient != null) {
