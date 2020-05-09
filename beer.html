@@ -17,7 +17,7 @@
           <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
         </a>
 
-          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+        
 
       </div>
     
@@ -26,43 +26,54 @@
           <a class="navbar-item">
             Liquor
           </a>
+          <div id="navbarBasicExample" class="navbar-end">
+            <div class="navbar-end">
+              <a class="navbar-item">
+                Home
+              </a>
 
       </div>
     </nav>
-    <div class="container">
-      <div class="carouse">
-        <section class="container">
-         
-          <div class="options-box">
-            
-            <h1>Find A Brewery! </h1>
-            <div class="form-group">
-              <label for="cityState">city/state?</label>
-              <input type="text" class="form-control" id="cityStateInput" aria-describedby="cityStateHelp" placeholder="cityState">
+    <section class="section body">
+    <div class="container bb-container">
+      <div class="columns is-centered">
+              <h1 class="title is-3 brewery-title">Find A Brewery!</h1>
+              
             </div>
-            <div class="form-group">
-              <label for="where">where?</label>
-              <input type="text" class="form-control" id="whereInput" aria-describedby="whereHelp" placeholder="where">
+            <br>
+            <div class="column is-centered is-one-third is-offset-4">
+              <label for="city">City: </label>
+              <input type="text" class="input" id="city" aria-describedby="cityStateHelp" placeholder="type your city here">
             </div>
-        </section>
-        <br>
-        <a class="carouse-item" href="#two!" id="Beer"><img src="images/Beer-Wallpaper-Download-Free.jpg"></a>
-        <a href="https://bulma.io">
-        <img src="images/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-        </a>
-  
+            <br>
+            <div class="column is-centered is-one-third is-offset-4">
+              <label for="state">State: </label>
+              <input type="text" class="input" id="state" aria-describedby="whereHelp" placeholder="state">
+            </div>
+            <br>
+            <div class="columns is-centered">
+            <button class="button is-outline is-light" id="submitButton">Submit</button>
+          </div>
+      
+          
+        
+        
 
-    <section class="section">
-      <div class="container">
-        <div class="columns is-centered is-two-thirds">
-          Insert stuff here
-        </div>
+      <a href="#two!" id="Beer"><img src="images/Beer-Wallpaper-Download-Free.jpg"></a>
+      
+      <div id="mapEl">
+        <!-- where map will go -->
       </div>
+      <div id="breweryEl">
+        <!-- where the brewery info will go -->
+      </div>
+    
+    </div>  
     </section>
 
         
          
-      </div>
+      
         
 
     
