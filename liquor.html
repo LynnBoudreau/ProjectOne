@@ -10,25 +10,25 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="liquor-body">
     <nav class="navbar is-flex-desktop" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
           <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
       </div>
       <div id="navbarBasicExample" class="navbar-end">
         <div class="navbar-end">
-          <a class="navbar-item">
+          <a class="navbar-item" href="beer.html">
             Beer
           </a>
       </div>
     </nav>
     <section class="section">
-      <div class="container">
-        <div class="columns is-centered is-two-thirds">
+      <div class="container liquor-section">
+        <div class="columns is-vcentered is-two-thirds input-search">
           <div class="search-div">
-            <label class="label">Search drinks by ingredient<br>(Example: vodka, lemon, rum, sour mix, etc.)</label>
-            <input class="input ingredient-input" type="text" placeholder="type your ingredient here...">
-            <button class="button is-primary is-fullwidth search-button">Search</button>
+            <label class="label label-text liquor-center">Search drinks by ingredient<br>(Example: vodka, lemon, rum, sour mix, etc.)</label>
+            <input class="input ingredient-input liquor-center" type="text" placeholder="type your ingredient here...">
+            <button class="button is-light is-outlined is-fullwidth search-button liquor-center">Search</button>
         </div>
         </div>
         <div class="columns is-centered is-two-thirds is-multiline instruction-div"></div>
@@ -66,12 +66,13 @@
           </div>
         </div>
         <button class="modal-close is-large" aria-label="close"></button>
+
       </div>
+      <footer class="foot">This is the footer
+
+      </footer>
     </section>
     
-    <footer class="footer">
-
-    </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.0.min.js"
       integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
