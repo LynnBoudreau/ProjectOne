@@ -3,8 +3,6 @@ var mapsEl = $("#mapEl");
 
 var googleApiKey = "AIzaSyADK5Lk6M5yKgWBra5haAe7z-e_l-PlFdE";
 
-var breweryUrl = `https://api.openbrewerydb.org/breweries/?by_city=${cityInput}&by_state=${stateInput}&per_page=5`;
-
 // Have an empty array to push the coordinates to from the ajax call
 var lonLatLocation = [];
 
@@ -15,6 +13,7 @@ $("#submitButton").on("click", function (e) {
   // Grab input from the city and state input boxes
   var cityInput = $("#city").val();
   var stateInput = $("#state").val();
+  var breweryUrl = `https://api.openbrewerydb.org/breweries/?by_city=${cityInput}&by_state=${stateInput}&per_page=5`;
 
   // Start the ajax call for the brewery api
   $.get(breweryUrl).then(function (response) {
@@ -51,7 +50,7 @@ $("#submitButton").on("click", function (e) {
       var addressEl = $("<li>").text(`Address: ${brewAddress}`);
       brewUl.append(nameEl, typeEl, addressEl);
       brewResponseEl.append(brewUl);
-      brewInfoEl.append(brewREl);
+      brewInfoEl.append(brewResponseEl);
 
       // push the brewery locations into the lonLat array to be used in the map source
       lonLatLocation.push(brewLocation);
