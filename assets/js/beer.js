@@ -77,6 +77,7 @@ $("#submitButton").on("click", function (e) {
       // create an image element with the source as the google map
       var mapImageEl = $("<img>", {
         src: mapSrc,
+        id: "map",
       });
 
       // empty the maps element each time the button is clicked

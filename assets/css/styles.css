@@ -139,14 +139,9 @@
   color: white;
 }
 
-#mapsEl {
+.center-items {
   justify-content: center;
   text-align: center;
-}
-
-#buttonDiv {
-  text-align: center;
-  align-items: center;
 }
 
 #titleDiv {
@@ -157,5 +152,6 @@
   padding: 30px;
 }
 
-.brew-info {
+#map {
+  width: 100%;
 }
