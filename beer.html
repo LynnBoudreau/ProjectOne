@@ -11,73 +11,70 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar is-flex-desktop" role="navigation" aria-label="main navigation">
+    <nav
+      class="navbar is-flex-desktop"
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-        </a>
-
-        
-
-      </div>
-    
-      <div id="navbarBasicExample" class="navbar-end">
-        <div class="navbar-end">
-          <a class="navbar-item">
-            Liquor
-          </a>
-          <div id="navbarBasicExample" class="navbar-end">
-            <div class="navbar-end">
-              <a class="navbar-item">
-                Home
-              </a>
-
+        <img
+          class="logo"
+          src="assets/images/booze-and-brews.png"
+          width="112"
+          height="28"
+        />
+        <h1 class="title">Booze and Brews</h1>
       </div>
     </nav>
     <section class="section body bb-section">
-    <div class="container bb-container">
-      <div class="columns is-centered">
+      <div class="container bb-container">
+        <div class="columns is-centered">
           <h1 class="title is-3 brewery-title">Find A Brewery!</h1>
-      </div>
-            <br>
-            <div class="column is-centered is-one-third is-offset-4">
-              <label for="city">City: </label>
-              <input type="text" class="input" id="city" aria-describedby="cityStateHelp" placeholder="Enter the city">
-            </div>
-            <br>
-            <div class="column is-centered is-one-third is-offset-4">
-              <label for="state">State: </label>
-              <input type="text" class="input" id="state" aria-describedby="whereHelp" placeholder="Enter the state">
-            </div>
-            <br>
-            <div class="columns is-centered">
-            <button class="button is-outline is-light" id="submitButton">Submit</button>
-          </div>
-      
-          
-        
-        
+        </div>
+        <br />
+        <div class="column is-centered is-one-third is-offset-4">
+          <label for="city">City: </label>
+          <input
+            type="text"
+            class="input"
+            id="city"
+            aria-describedby="cityStateHelp"
+            placeholder="Enter the city"
+          />
+        </div>
+        <br />
+        <div class="column is-centered is-one-third is-offset-4">
+          <label for="state">State: </label>
+          <input
+            type="text"
+            class="input"
+            id="state"
+            aria-describedby="whereHelp"
+            placeholder="Enter the state"
+          />
+        </div>
+        <br />
+        <div class="columns is-centered">
+          <button class="button is-outline is-light" id="submitButton">
+            Submit
+          </button>
+        </div>
 
-      <div class="column is-two-thirds is-offset-2"><img  id="beer" src="images/Beer-Wallpaper-Download-Free.jpg"></div>
-      
-      <div class="column is-6 is-offset-3" id="mapEl">
-        <!-- where map will go -->
+        <div class="column is-two-thirds is-offset-2">
+          <img id="beer" src="images/Beer-Wallpaper-Download-Free.jpg" />
+        </div>
+
+        <div class="column is-6 is-offset-3" id="mapEl">
+          <!-- where map will go -->
+        </div>
+        <div class="column is-one-third is-offset-4" id="breweryEl">
+          <!-- where the brewery info will go -->
+        </div>
       </div>
-      <div class="column is-one-third is-offset-4" id="breweryEl">
-        <!-- where the brewery info will go -->
-      </div>
-    
-    </div>  
     </section>
 
-        
-         
-      
-        
-
-    
     <footer class="foot">Created by John, Kaleigh, Karen, and Lynn</footer>
-    
+
     <script
       src="https://code.jquery.com/jquery-3.5.0.min.js"
       integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="

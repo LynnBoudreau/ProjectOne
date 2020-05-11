@@ -17,7 +17,10 @@ $("#submitButton").on("click", function (e) {
 
   // Start the ajax call for the brewery api
   $.get(breweryUrl).then(function (response) {
+    // Log the response from breweryAPI
     console.log(response);
+    // Empty the breweryEl to make space for the new info
+    $("#breweryEl").empty();
 
     // Run a for loop for the length of the response array
     for (var i = 0; i < response.length; i++) {
@@ -50,6 +53,7 @@ $("#submitButton").on("click", function (e) {
       var addressEl = $("<li>").text(`Address: ${brewAddress}`);
       brewUl.append(nameEl, typeEl, addressEl);
       brewResponseEl.append(brewUl);
+
       brewInfoEl.append(brewResponseEl);
 
       // push the brewery locations into the lonLat array to be used in the map source
