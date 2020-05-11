@@ -155,3 +155,16 @@
 #map {
   width: 100%;
 }
+
+#breweryTable tr:nth-child(odd) {
+  background-color: #d39703;
+}
+
+#breweryTable {
+  background-color: #a17302;
+  color: white;
+}
+
+#breweryTable tr:nth-child(even) {
+  background-color: #a17302;
+}

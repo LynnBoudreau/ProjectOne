@@ -25,7 +25,8 @@ $("#submitButton").on("click", function (e) {
 
     // create a new table for the brewery response
     var brewTableEl = $("<table>", {
-      class: "table is-bordered",
+      class: "table is-bordered is-striped",
+      id: "breweryTable",
     });
     var theadEl = $("<thead>");
     // have the thead contain name, phone, and address info
@@ -33,7 +34,10 @@ $("#submitButton").on("click", function (e) {
     var phoneTh = $("<th>").text("Phone Number");
     var addressTh = $("<th>").text("Address");
     theadEl.append(nameTh, phoneTh, addressTh);
-    brewTableEl.append(theadEl);
+    // create a tbody element for where the info will go
+    var tbodyEl = $("<tbody>");
+    // append the tbody and thead to the table element
+    brewTableEl.append(theadEl, tbodyEl);
 
     // Run a for loop for the length of the response array
     for (var i = 0; i < response.length; i++) {
@@ -55,13 +59,16 @@ $("#submitButton").on("click", function (e) {
       // we need a div that will contain the brewery info
       var brewInfoEl = $("#breweryEl");
 
-      // Create new tbody and td elements for each brewery's name, phone, and address to be displayed
-      var tbodyEl = $("<tbody>");
-      var nameEl = $("<td>").text(brewName);
+      // Create new tr and td elements for each brewery's name, phone, and address to be displayed
+
+      var trEl = $("<tr>");
+      var nameEl = $("<td>").text(`${i + 1}. ${brewName}`);
       var numberEl = $("<td>").text(brewNumber);
       var addressEl = $("<td>").text(brewAddress);
+      // Append the info to the tbody
+      trEl.append(nameEl, numberEl, addressEl);
       // Append the info to the previously created tbody
-      tbodyEl.append(nameEl, numberEl, addressEl);
+      tbodyEl.append(trEl);
       // Append the tbody to the previously created table
       brewTableEl.append(tbodyEl);
       // Append the completed table to the brewery info div
