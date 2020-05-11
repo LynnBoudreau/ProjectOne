@@ -144,8 +144,9 @@
   text-align: center;
 }
 
-#submitButton {
+#buttonDiv {
   text-align: center;
+  align-items: center;
 }
 
 #titleDiv {
@@ -154,4 +155,7 @@
 
 .spacing {
   padding: 30px;
+}
+
+.brew-info {
 }

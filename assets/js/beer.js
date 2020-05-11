@@ -23,6 +23,18 @@ $("#submitButton").on("click", function (e) {
     // Empty the breweryEl to make space for the new info
     $("#breweryEl").empty();
 
+    // create a new table for the brewery response
+    var brewTableEl = $("<table>", {
+      class: "table is-bordered",
+    });
+    var theadEl = $("<thead>");
+    // have the thead contain name, phone, and address info
+    var nameTh = $("<th>").text("Brewery Name");
+    var phoneTh = $("<th>").text("Phone Number");
+    var addressTh = $("<th>").text("Address");
+    theadEl.append(nameTh, phoneTh, addressTh);
+    brewTableEl.append(theadEl);
+
     // Run a for loop for the length of the response array
     for (var i = 0; i < response.length; i++) {
       // Grab the longitude and latitude of the brewery
@@ -43,19 +55,17 @@ $("#submitButton").on("click", function (e) {
       // we need a div that will contain the brewery info
       var brewInfoEl = $("#breweryEl");
 
-      // create a new div for each brewery
-      var brewResponseEl = $("<div>", {
-        class: "column is-centered",
-      });
-      // Create a new ul with li elements for the name, type, and address
-      var brewUl = $("<ul>");
-      var nameEl = $("<li>").text(`Brewery ${i + 1}: ${brewName}`);
-      var numberEl = $("<li>").text(`Phone Number: ${brewNumber}`);
-      var addressEl = $("<li>").text(`Address: ${brewAddress}`);
-      brewUl.append(nameEl, numberEl, addressEl);
-      brewResponseEl.append(brewUl);
-
-      brewInfoEl.append(brewResponseEl);
+      // Create new tbody and td elements for each brewery's name, phone, and address to be displayed
+      var tbodyEl = $("<tbody>");
+      var nameEl = $("<td>").text(brewName);
+      var numberEl = $("<td>").text(brewNumber);
+      var addressEl = $("<td>").text(brewAddress);
+      // Append the info to the previously created tbody
+      tbodyEl.append(nameEl, numberEl, addressEl);
+      // Append the tbody to the previously created table
+      brewTableEl.append(tbodyEl);
+      // Append the completed table to the brewery info div
+      brewInfoEl.append(brewTableEl);
 
       // push the brewery locations into the lonLat array to be used in the map source
       lonLatLocation.push(brewLocation);
