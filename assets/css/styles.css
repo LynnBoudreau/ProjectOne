@@ -1,3 +1,22 @@
+.nav-style {
+  background-color: #36343c;
+  border-bottom: 1px solid #e2b306;
+  padding-left: 20px;
+}
+
+.modal-header {
+  background-color: #4c494f;
+  border: none;
+}
+
+.modal-font {
+  color: white;
+}
+
+.modal-body {
+  background-color: #a17302;
+}
+
 .text-center {
   text-align: center;
 }
@@ -8,6 +27,11 @@
 
 .header-margin {
   margin: 20px;
+}
+
+.title-margin {
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .card-footer {
@@ -131,6 +155,7 @@
   background-color: #4c494f;
 }
 
-.brewery-title {
+.bb-title {
   color: white;
+  margin-top: 60px;
 }
