@@ -4,6 +4,10 @@
   padding-left: 20px;
 }
 
+.hover:hover {
+  color: #e2b306;
+}
+
 .modal-header {
   background-color: #4c494f;
   border: none;
