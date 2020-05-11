@@ -25,7 +25,7 @@ $("#submitButton").on("click", function (e) {
 
     // create a new table for the brewery response
     var brewTableEl = $("<table>", {
-      class: "table is-bordered is-striped",
+      class: "table is-bordered",
       id: "breweryTable",
     });
     var theadEl = $("<thead>");
