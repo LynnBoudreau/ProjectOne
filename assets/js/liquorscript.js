@@ -3,6 +3,7 @@ $(".search-button").on("click", function () {
     // empty the .recipe-div and .instruction-div if there is already text there from a previous search
   $(".recipe-div").empty();
   $(".instruction-div").empty();
+  $(".searched-text").empty();
 
 
   var ingredientInput = $(".ingredient-input").val();
@@ -34,7 +35,7 @@ $(".search-button").on("click", function () {
       $(".recipe-div").append(cocktailDivEl);
     });
     var inputSearched = $("<p>", {
-      class: "label-text text-center"
+      class: "label-text text-center searched-text"
     }).text("You searched for: " + ingredientInput);
     var instructionPEl = $("<p>").text("Click an image to view recipe");
     $(".search-div").append(inputSearched);
