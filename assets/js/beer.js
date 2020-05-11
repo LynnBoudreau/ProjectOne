@@ -3,17 +3,18 @@ var mapsEl = $("#mapEl");
 
 var googleApiKey = "AIzaSyADK5Lk6M5yKgWBra5haAe7z-e_l-PlFdE";
 
-// Have an empty array to push the coordinates to from the ajax call
-var lonLatLocation = [];
-
 // Create a button and event listener for that button
 $("#submitButton").on("click", function (e) {
   e.preventDefault();
 
-  // Grab input from the city and state input boxes
-  var cityInput = $("#city").val();
-  var stateInput = $("#state").val();
+  // Grab input from the city and state input boxes. Trim the values so the search actually works
+  var cityInput = $("#city").val().trim();
+  var stateInput = $("#state").val().trim();
+  // Url for the breweryAPI call
   var breweryUrl = `https://api.openbrewerydb.org/breweries/?by_city=${cityInput}&by_state=${stateInput}&per_page=5`;
+
+  // Have an empty array to push the coordinates to from the ajax call
+  var lonLatLocation = [];
 
   // Start the ajax call for the brewery api
   $.get(breweryUrl).then(function (response) {
@@ -36,7 +37,7 @@ $("#submitButton").on("click", function (e) {
 
       // loop over the response to get the name's, brewery type, and address
       var brewName = response[i].name;
-      var brewType = response[i].brewery_type;
+      var brewNumber = response[i].phone;
       var brewAddress = response[i].street;
 
       // we need a div that will contain the brewery info
@@ -48,10 +49,10 @@ $("#submitButton").on("click", function (e) {
       });
       // Create a new ul with li elements for the name, type, and address
       var brewUl = $("<ul>");
-      var nameEl = $("<li>").text(`Name: ${brewName}`);
-      var typeEl = $("<li>").text(`Brewery Type: ${brewType}`);
+      var nameEl = $("<li>").text(`Brewery ${i + 1}: ${brewName}`);
+      var numberEl = $("<li>").text(`Phone Number: ${brewNumber}`);
       var addressEl = $("<li>").text(`Address: ${brewAddress}`);
-      brewUl.append(nameEl, typeEl, addressEl);
+      brewUl.append(nameEl, numberEl, addressEl);
       brewResponseEl.append(brewUl);
 
       brewInfoEl.append(brewResponseEl);
@@ -61,6 +62,7 @@ $("#submitButton").on("click", function (e) {
 
       // append the necessary search paramaters into the map source
       var mapSrc = `https://maps.googleapis.com/maps/api/staticmap?center=${cityInput},${stateInput}&zoom=10&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:1%7C${lonLatLocation[0]}&markers=color:green%7Clabel:2%7C${lonLatLocation[1]}&markers=color:yellow%7Clabel:3%7C${lonLatLocation[2]}&markers=color:red%7Clabel:4%7C${lonLatLocation[3]}&markers=color:purple%7Clabel:5%7C${lonLatLocation[4]}&key=${googleApiKey}`;
+      console.log(mapSrc);
 
       // create an image element with the source as the google map
       var mapImageEl = $("<img>", {

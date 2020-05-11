@@ -8,7 +8,7 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css"
     />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Document</title>
+    <title>Find A Brewery!</title>
   </head>
   <body>
     <nav
@@ -27,29 +27,29 @@
       </div>
     </nav>
     <section class="section body bb-section">
+      <div class="spacing"></div>
       <div class="container bb-container">
-        <div class="columns is-centered">
+        <div class="columns is-centered" id="titleDiv">
           <h1 class="title is-3 brewery-title">Find A Brewery!</h1>
         </div>
-        <br />
         <div class="column is-centered is-one-third is-offset-4">
           <label for="city">City: </label>
           <input
             type="text"
             class="input"
             id="city"
-            aria-describedby="cityStateHelp"
+            aria-describedby="Enter City"
             placeholder="Enter the city"
           />
         </div>
-        <br />
+
         <div class="column is-centered is-one-third is-offset-4">
           <label for="state">State: </label>
           <input
             type="text"
             class="input"
             id="state"
-            aria-describedby="whereHelp"
+            aria-describedby="Enter state"
             placeholder="Enter the state"
           />
         </div>

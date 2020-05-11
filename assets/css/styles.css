@@ -143,3 +143,15 @@
   justify-content: center;
   text-align: center;
 }
+
+#submitButton {
+  text-align: center;
+}
+
+#titleDiv {
+  padding-top: 50px;
+}
+
+.spacing {
+  padding: 30px;
+}
