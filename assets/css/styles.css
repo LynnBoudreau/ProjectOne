@@ -134,3 +134,12 @@
 .brewery-title {
   color: white;
 }
+
+#breweryEl {
+  color: white;
+}
+
+#mapsEl {
+  justify-content: center;
+  text-align: center;
+}

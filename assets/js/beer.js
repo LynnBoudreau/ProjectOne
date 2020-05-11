@@ -41,7 +41,7 @@ $("#submitButton").on("click", function (e) {
 
       // create a new div for each brewery
       var brewResponseEl = $("<div>", {
-        class: "",
+        class: "column is-centered",
       });
       // Create a new ul with li elements for the name, type, and address
       var brewUl = $("<ul>");
