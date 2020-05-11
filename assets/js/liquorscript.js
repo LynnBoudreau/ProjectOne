@@ -12,8 +12,10 @@ $(".search-button").on("click", function () {
   $.get(urlOne).then(function (response) {
     console.log(response);
     // for each drink in the array, create <p>, <div> and <img> to display drink name and drink image.  Add data attribute to each image of that drink's ID from the ajax response.
+
     var drinksArray = response.drinks;
     drinksArray.forEach(function (drink) {
+      var drinkName = drink.strDrink;
       var drinkID = drink.idDrink;
       var drinkImgEl = $("<img>", {
         src: drink.strDrinkThumb,
@@ -31,8 +33,12 @@ $(".search-button").on("click", function () {
       cocktailDivEl.append(cocktailNameP, drinkImgEl);
       $(".recipe-div").append(cocktailDivEl);
     });
-    var instructionPEl = $("<p>").text("click an image to view recipe");
-    $(".instruction-div").prepend(instructionPEl);
+    var inputSearched = $("<p>", {
+      class: "label-text text-center"
+    }).text("You searched for: " + ingredientInput);
+    var instructionPEl = $("<p>").text("Click an image to view recipe");
+    $(".search-div").append(inputSearched);
+    $(".instruction-div").append(instructionPEl);
 
     // when the drink image is clicked, run ajax request to get the ingredients and recipe using the drink id data-attribute from the image
     $(".drink-button").on("click", function () {

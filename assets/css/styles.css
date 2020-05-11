@@ -42,7 +42,7 @@
 }
 
 .input-search {
-  background-image: url("/assets/images/Screen\ Shot\ 2020-05-09\ at\ 11.35.46\ AM.png");
+  background-image: url("../images/whiskey-pic.png");
   background-size: 800px;
   background-position: center;
   background-repeat: no-repeat;
@@ -78,6 +78,7 @@
   text-align: center;
   background-color: #c6b75e;
   color: black;
+  height: fit-content;
 }
 
 .instruction-div {
