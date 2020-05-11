@@ -4,6 +4,10 @@
   padding-left: 20px;
 }
 
+.hover:hover {
+  color: #e2b306;
+}
+
 .modal-header {
   background-color: #4c494f;
   border: none;
@@ -66,7 +70,7 @@
 }
 
 .input-search {
-  background-image: url("/assets/images/Screen\ Shot\ 2020-05-09\ at\ 11.35.46\ AM.png");
+  background-image: url("../images/whiskey-pic.png");
   background-size: 800px;
   background-position: center;
   background-repeat: no-repeat;
@@ -96,13 +100,13 @@
 }
 
 .cocktail-div {
-  padding: 5px;
+  padding: 6px;
   margin: 5px;
-  border: 1px solid black;
   border-radius: 15px;
   text-align: center;
   background-color: #c6b75e;
   color: black;
+  height: fit-content;
 }
 
 .instruction-div {
