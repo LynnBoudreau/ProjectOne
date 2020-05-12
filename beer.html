@@ -8,80 +8,88 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css"
     />
     <link rel="stylesheet" href="./assets/css/styles.css" />
-    <title>Document</title>
+    <title>Booze and Brews - Breweries</title>
+    <link rel="icon" href="assets/images/bb-icon.png" />
   </head>
-  <body>
-    <nav class="navbar is-flex-desktop" role="navigation" aria-label="main navigation">
+  <body class="body">
+    <nav
+      class="navbar is-flex-desktop nav-style"
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div class="navbar-brand">
-        <a class="navbar-item">
-          <img src="images/Hero Societe Brewing Beer Tasters 1800x788.jpg" alt="dozen craft beers light to dark" width="56" height="28" href="index.html">
-        </a>
-
-        
-
+        <h1 class="title title-margin label-text">
+          Booze and Brews
+        </h1>
       </div>
-    
       <div id="navbarBasicExample" class="navbar-end">
         <div class="navbar-end">
-          <a class="navbar-item" href="liquor.html">
+          <a class="label-text header-margin hover" href="liquor.html">
             Liquor
           </a>
-          <div id="navbarBasicExample" class="navbar-end">
-            <div class="navbar-end">
-              <a class="navbar-item" href="index.html">
-                Home
-              </a>
-
+        </div>
       </div>
     </nav>
     <section class="section body bb-section">
-    <div class="container bb-container">
-      <div class="columns is-centered">
-              <h1 class="title is-3 brewery-title">Find A Brewery!</h1>
-              
-            </div>
-            <br>
-            <div class="column is-centered is-one-third is-offset-4">
-              <label for="city">City: </label>
-              <input type="text" class="input" id="city" aria-describedby="cityStateHelp" placeholder="type your city here">
-            </div>
-            <br>
-            <div class="column is-centered is-one-third is-offset-4">
-              <label for="state">State: </label>
-              <input type="text" class="input" id="state" aria-describedby="whereHelp" placeholder="state">
-            </div>
-            <br>
-            <div class="columns is-centered">
-            <button class="button is-outline is-light" id="submitButton">Submit</button>
-          </div>
-      
-          
-        
-        
+      <div class="spacing"></div>
+      <div class="container bb-container">
+        <div class="columns is-centered" id="titleDiv">
+          <h1 class="title is-3 brewery-title center-items">
+            Find A Brewery!
+          </h1>
+        </div>
+        <div class="column is-centered is-one-third is-offset-4">
+          <label for="city">City: </label>
+          <input
+            type="text"
+            class="input"
+            id="city"
+            aria-describedby="Enter City"
+            placeholder="Enter the city"
+          />
+        </div>
 
-      <a href="#two!" id="Beer"><img src="images/Beer-Wallpaper-Download-Free.jpg" alt="glasses of craft beers"></a>
-      
-      <div id="mapEl">
-        <!-- where map will go -->
+        <div class="column is-centered is-one-third is-offset-4">
+          <label for="state">State: </label>
+          <input
+            type="text"
+            class="input"
+            id="state"
+            aria-describedby="Enter state"
+            placeholder="Enter the state"
+          />
+        </div>
+        <br />
+        <div class="columns is-centered center-items">
+          <button
+            class="button is-outline is-light center-items"
+            id="submitButton"
+          >
+            Search
+          </button>
+        </div>
+
+        <div class="column is-two-thirds is-offset-2">
+          <img
+            id="beer"
+            src="./assets/images/Beer-Wallpaper-Download-Free.jpg"
+          />
+        </div>
+
+        <div class="column is-6 is-offset-3" id="mapEl">
+          <!-- where map will go -->
+        </div>
+        <div class="column is-6 is-offset-3" id="breweryEl">
+          <!-- where the brewery info will go -->
+        </div>
       </div>
-      <div id="breweryEl">
-        <!-- where the brewery info will go -->
-      </div>
-    
-    </div>  
     </section>
 
-        
-         
-      
-        
-
-    
-    <footer class="footer">
-      <h2>Project ❤️️ One. </h2>
-      <p>&copy; 2020 John Kaleigh Karen Lynn.</p>
+    <footer class="foot">
+      <h2>Project ❤️️ One.</h2>
+      <p>&copy; 2020 John, Kaleigh, Karen, Lynn.</p>
     </footer>
-    
+
     <script
       src="https://code.jquery.com/jquery-3.5.0.min.js"
       integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="

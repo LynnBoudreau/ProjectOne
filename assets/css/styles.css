@@ -137,14 +137,21 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #e4e9ea;
-  height: 50px;
-  color: black;
+  background-color: #36343c;
+  height: 60px;
+  color: white;
   font-size: 13px;
   text-align: center;
-  padding-top: 15px;
+  padding: 15px;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border-top: 1px solid #e2b306;
 }
 
+.foot p {
+  margin-bottom: 20px;
+}
 .beer-section {
   background-color: #a17302;
 }
@@ -158,14 +165,47 @@
   margin-top: 60px;
 }
 
-.footer {
-  padding: 30px;
-  clear: both;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+.footer h2 {
+  font-size: 20px;
+}
+
+.center-items {
+  justify-content: center;
   text-align: center;
 }
 
-.footer h2 {
-  font-size: 20px;
+#titleDiv {
+  padding-top: 50px;
+}
+
+.spacing {
+  padding: 30px;
+}
+
+#map {
+  width: 100%;
+}
+
+#breweryTable {
+  table-layout: fixed;
+  width: 100%;
+}
+
+#breweryTable tr:nth-child(odd) {
+  background-color: #d39703;
+  color: white;
+}
+
+#breweryTable th {
+  background-color: #a17302;
+  color: white;
+}
+
+#breweryTable tr:nth-child(even) {
+  background-color: #a17302;
+  color: white;
+}
+
+#titleDiv h1 {
+  color: white;
 }
