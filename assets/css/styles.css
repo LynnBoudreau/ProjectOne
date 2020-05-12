@@ -157,3 +157,48 @@
   color: white;
   margin-top: 60px;
 }
+
+#breweryEl {
+  color: white;
+}
+
+.center-items {
+  justify-content: center;
+  text-align: center;
+}
+
+#titleDiv {
+  padding-top: 50px;
+}
+
+.spacing {
+  padding: 30px;
+}
+
+#map {
+  width: 100%;
+}
+
+#breweryTable {
+  table-layout: fixed;
+  width: 100%;
+}
+
+#breweryTable tr:nth-child(odd) {
+  background-color: #d39703;
+  color: white;
+}
+
+#breweryTable th {
+  background-color: #a17302;
+  color: white;
+}
+
+#breweryTable tr:nth-child(even) {
+  background-color: #a17302;
+  color: white;
+}
+
+#titleDiv h1 {
+  color: white;
+}
