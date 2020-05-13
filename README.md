@@ -1,4 +1,11 @@
-## Welcome to Project One
+#Booze and Brews
+
+##Description
+This application fulfills the users drinking needs.  It allows the user to search for breweries by town/city, state as well as look up cocktail recipes by ingredients they have on hand.
+
+
+
+##
 
 #Presentation Requirements:
 
