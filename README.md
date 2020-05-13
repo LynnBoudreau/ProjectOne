@@ -18,6 +18,20 @@ Demo: Show your stuff!
 
 Directions for Future Development
 
-Links to the deployed application and the GitHub repository
+---
+
+Project: ProjectOne
+
+Installation:
+
+Usage: Brewery Finder and Mixed Drink Recipes Application
+
+Credits: John Bouchard, Kaleigh Spurio, Karen Astell, and Lynn Boudreau
+
+License:
+
+Links to the deployed application:
 https://github.com/LynnBoudreau/ProjectOne
+
+and the GitHub repository:
 https://lynnboudreau.github.io/ProjectOne/
