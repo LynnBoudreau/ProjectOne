@@ -12,9 +12,7 @@ $(".search-button").on("click", function () {
   //  ajax request to get drink name, image, and drink id.
   $.get(urlOne).then(function (response) {
     console.log(response);
-    if (response = "") {
-      alert("dsfgsdfg")
-    }
+
     // for each drink in the array, create <p>, <div> and <img> to display drink name and drink image.  Add data attribute to each image of that drink's ID from the ajax response.
 
     var drinksArray = response.drinks;
