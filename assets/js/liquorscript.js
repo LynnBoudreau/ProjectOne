@@ -35,12 +35,15 @@ $(".search-button").on("click", function () {
       cocktailDivEl.append(cocktailNameP, drinkImgEl);
       $(".recipe-div").append(cocktailDivEl);
     });
+
     var inputSearched = $("<p>", {
       class: "label-text text-center searched-text"
     }).text("You searched for: " + ingredientInput);
+    
     var instructionPEl = $("<p>").text("Click an image to view recipe");
-    $(".search-div").append(inputSearched);
     $(".instruction-div").append(instructionPEl);
+    $(".search-div").append(inputSearched);
+
 
     // when the drink image is clicked, run ajax request to get the ingredients and recipe using the drink id data-attribute from the image
     $(".drink-button").on("click", function () {
@@ -122,5 +125,11 @@ $(".search-button").on("click", function () {
         $(".recipe").text(modalRecipe);
       });
     });
+  }).catch(function(error){
+    // if there is no response, an error message will appear
+    var errorParaEl = $("<p>", {
+      class: "error-message label-text"
+    }).text("There are no responses for your request.  Check your spelling or try a different search.");
+    $(".recipe-div").append(errorParaEl);
   });
 });
