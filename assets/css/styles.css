@@ -61,16 +61,18 @@ body {
 }
 
 .index-img {
-  height: 300px;
+  width: 50%;
 }
 
-.beer-index-img {
+/* .beer-index-img {
   padding-right: 300px;
+    height: 186px;
+  width: 256px;
 }
 
 .cocktail-index-img {
   padding-left: 300px;
-}
+} */
 
 .follow-directions {
   font-size: 40px;
@@ -102,7 +104,7 @@ body {
 }
 
 .index-container {
-  height: 720px;
+  height: 100%;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -171,6 +173,7 @@ body {
 .bb-title {
   color: white;
   margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .footer h2 {
