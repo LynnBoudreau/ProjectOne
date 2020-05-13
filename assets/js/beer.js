@@ -55,6 +55,7 @@ $("#submitButton").on("click", function (e) {
       var brewName = response[i].name;
       var brewNumber = response[i].phone;
       var brewAddress = response[i].street;
+      var brewURL = response[i].website_url;
 
       // we need a div that will contain the brewery info
       var brewInfoEl = $("#breweryEl");
@@ -62,7 +63,12 @@ $("#submitButton").on("click", function (e) {
       // Create new tr and td elements for each brewery's name, phone, and address to be displayed
 
       var trEl = $("<tr>");
-      var nameEl = $("<td>").text(`${i + 1}. ${brewName}`);
+      // append a link into the name of the brewery to the brewery's site
+      var nameEl = $("<td>").html(
+        `${
+          i + 1
+        }. <a class="footer-links hover-dark" href="${brewURL}" target="_blank">${brewName}</a>`
+      );
       var numberEl = $("<td>").text(brewNumber);
       var addressEl = $("<td>").text(brewAddress);
       // Append the info to the tbody
