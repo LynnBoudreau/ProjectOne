@@ -138,13 +138,20 @@
   bottom: 0;
   width: 100%;
   background-color: #36343c;
-  height: 50px;
+  height: 60px;
   color: white;
   font-size: 13px;
   text-align: center;
-  padding-top: 15px;
+  padding: 15px;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border-top: 1px solid #e2b306;
 }
 
+.foot p {
+  margin-bottom: 20px;
+}
 .beer-section {
   background-color: #a17302;
 }
@@ -158,8 +165,8 @@
   margin-top: 60px;
 }
 
-#breweryEl {
-  color: white;
+.footer h2 {
+  font-size: 20px;
 }
 
 .center-items {
