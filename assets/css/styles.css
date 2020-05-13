@@ -218,3 +218,7 @@ body {
   color: white;
   text-decoration: none;
 }
+
+.hover-dark:hover {
+  color: #4c494f;
+}
