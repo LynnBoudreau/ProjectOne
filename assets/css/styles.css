@@ -213,3 +213,8 @@ body {
 #titleDiv h1 {
   color: white;
 }
+
+.footer-links {
+  color: white;
+  text-decoration: none;
+}
