@@ -6,14 +6,25 @@ var googleApiKey = "AIzaSyADK5Lk6M5yKgWBra5haAe7z-e_l-PlFdE";
 // Create a button and event listener for that button
 $("#submitButton").on("click", function (e) {
   e.preventDefault();
+
+  // Grab input from the city and state input boxes. Trim the values so the search actually works
+  var cityInput = $("#city").val().trim();
+  var stateInput = $("#state").val().trim();
+
+  // If no text input detected
+  if (cityInput == "" || stateInput == "") {
+    var noTextMessage = $("<p>", {
+      class: "label-text",
+    }).text("Please be sure to type in a location and try again.");
+    $("#beerImgDiv").prepend(noTextMessage);
+    return;
+  }
+
   // bring the user to the table element after 1 second so it gives the ajax call time to run
   setTimeout(function () {
     location.href = "#breweryEl";
   }, 1000);
 
-  // Grab input from the city and state input boxes. Trim the values so the search actually works
-  var cityInput = $("#city").val().trim();
-  var stateInput = $("#state").val().trim();
   // Url for the breweryAPI call
   var breweryUrl = `https://api.openbrewerydb.org/breweries/?by_city=${cityInput}&by_state=${stateInput}&per_page=5`;
 
