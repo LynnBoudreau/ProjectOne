@@ -3,9 +3,10 @@
 ## Description
 This application fulfills the users drinking needs.  It allows the user to search for breweries by town/city, state as well as look up cocktail recipes by ingredients they have on hand.
 
+## Demonstration
 
-
-##
+#### Brewery Page
+![brewery-page-demo](https://user-images.githubusercontent.com/61129844/81996308-b187bb00-961a-11ea-8a83-49815417f74a.gif)
 
 ## Presentation Requirements:
 
