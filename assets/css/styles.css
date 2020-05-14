@@ -231,3 +231,8 @@ body {
 .width-div {
   width: 100%;
 }
+
+.beer-center {
+  width: 100%;
+  margin-top: 10px;
+}
