@@ -10,6 +10,16 @@ $("#submitButton").on("click", function (e) {
   // Grab input from the city and state input boxes. Trim the values so the search actually works
   var cityInput = $("#city").val().trim();
   var stateInput = $("#state").val().trim();
+  var errorDiv = $("#errorDiv");
+  errorDiv.empty();
+  // If no text input detected
+  if (cityInput == "" || stateInput == "") {
+    var noTextMessage = $("<p>").text(
+      "Please be sure to type in a location and try again."
+    );
+    errorDiv.append(noTextMessage);
+    return;
+  }
   // Url for the breweryAPI call
   var breweryUrl = `https://api.openbrewerydb.org/breweries/?by_city=${cityInput}&by_state=${stateInput}&per_page=5`;
 
@@ -20,6 +30,15 @@ $("#submitButton").on("click", function (e) {
   $.get(breweryUrl).then(function (response) {
     // Log the response from breweryAPI
     console.log(response);
+    // if response is an empty array
+    if (response.length == 0) {
+      var errorMessage = $("<p>").text(
+        "Please check the spelling of your search and try again"
+      );
+      errorDiv.append(errorMessage);
+      return;
+    }
+
     // Empty the breweryEl to make space for the new info
     $("#breweryEl").empty();
 
@@ -98,5 +117,9 @@ $("#submitButton").on("click", function (e) {
       // append the new map to the map element
       mapsEl.append(mapImageEl);
     }
+    // once everything is appended, bring the user to the table
+    setTimeout(function () {
+      location.href = "#breweryEl";
+    }, 500);
   });
 });
