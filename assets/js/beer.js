@@ -9,7 +9,7 @@ $("#submitButton").on("click", function (e) {
 
   // Grab input from the city and state input boxes. Trim the values so the search actually works
   var cityInput = $("#city").val().trim();
-  var stateInput = $("#state").val().trim();
+  var stateInput = $("#state").val();
   var errorDiv = $("#errorDiv");
   errorDiv.empty();
   // If no text input detected
