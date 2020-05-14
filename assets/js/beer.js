@@ -5,19 +5,20 @@ var googleApiKey = "AIzaSyADK5Lk6M5yKgWBra5haAe7z-e_l-PlFdE";
 
 // Create a button and event listener for that button
 $("#submitButton").on("click", function (e) {
-  e.preventDefault();
-
   // Grab input from the city and state input boxes. Trim the values so the search actually works
   var cityInput = $("#city").val().trim();
   var stateInput = $("#state").val();
   var errorDiv = $("#errorDiv");
   errorDiv.empty();
+
   // If no text input detected
   if (cityInput == "" || stateInput == "") {
     var noTextMessage = $("<p>").text(
       "Please be sure to type in a location and try again."
     );
     errorDiv.append(noTextMessage);
+    mapsEl.empty();
+    $("#breweryEl").empty();
     return;
   }
   // Url for the breweryAPI call
@@ -33,9 +34,11 @@ $("#submitButton").on("click", function (e) {
     // if response is an empty array
     if (response.length == 0) {
       var errorMessage = $("<p>").text(
-        "Please check the spelling of your search and try again"
+        "Your search returned no reponse. Please either check spelling or try a new city."
       );
       errorDiv.append(errorMessage);
+      mapsEl.empty();
+      $("#breweryEl").empty();
       return;
     }
 
