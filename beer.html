@@ -44,7 +44,6 @@
           </h1>
         </div>
         <div class="column is-centered is-one-third is-offset-4">
-          <label for="city">City: </label>
           <input
             type="text"
             class="input"
@@ -110,16 +109,17 @@
               <option value="Wyoming">Wyoming</option>
             </select>
           </div>
+          <div class="column is-centered center-items">
+            <button
+              class="button beer-center is-outlined is-light center-items is-fullwidth"
+              id="submitButton"
+            >
+              Search
+            </button>
+          </div>
         </div>
         <br />
-        <div class="columns is-centered center-items">
-          <button
-            class="button is-outline is-light center-items"
-            id="submitButton"
-          >
-            Search
-          </button>
-        </div>
+
         <div
           class="column is-two-thirds is-offset-2 grounded label-text"
           id="errorDiv"
