@@ -41,7 +41,7 @@ $(".search-button").on("click", function () {
     }).text("You searched for: " + ingredientInput);
     
     var instructionPEl = $("<p>", {
-      class: "is-size-7-mobile is-centered"
+      class: "is-size-6-mobile is-centered"
     }).text("Click an image to view recipe");
     $(".instruction-div").append(instructionPEl);
     $(".search-div").append(inputSearched);
