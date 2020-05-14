@@ -227,3 +227,7 @@ body {
 .hover-dark:hover {
   color: #4c494f;
 }
+
+.width-div {
+  width: 100%;
+}
