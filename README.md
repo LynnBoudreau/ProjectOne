@@ -1,13 +1,13 @@
-#Booze and Brews
+# Booze and Brews
 
-##Description
+## Description
 This application fulfills the users drinking needs.  It allows the user to search for breweries by town/city, state as well as look up cocktail recipes by ingredients they have on hand.
 
 
 
 ##
 
-#Presentation Requirements:
+## Presentation Requirements:
 
 Use this project presentation template to address the following:
 
@@ -38,7 +38,9 @@ Credits: John Bouchard, Kaleigh Spurio, Karen Astell, and Lynn Boudreau
 License:
 
 Links to the deployed application:
-https://github.com/LynnBoudreau/ProjectOne
+https://lynnboudreau.github.io/ProjectOne/
 
 and the GitHub repository:
-https://lynnboudreau.github.io/ProjectOne/
+https://github.com/LynnBoudreau/ProjectOne
+
+
