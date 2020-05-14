@@ -5,12 +5,8 @@ This application fulfills the users drinking needs.  It allows the user to searc
 
 ## Demonstration
 
-#### Entry Modal
-
-![Entery-Modal-demo](https://media.giphy.com/media/WQI4okMjC7BQohuAzl/200w_d.gif)
-
 #### Brewery Page
-![brewery-page-demo](https://user-images.githubusercontent.com/61129844/81996308-b187bb00-961a-11ea-8a83-49815417f74a.gif)
+![brewery-page-demo](https://media.giphy.com/media/l4v2VHuyVYmX7tlSmb/giphy.gif)
 
 ![liquor-page-demo](https://media.giphy.com/media/KDDRDLIb9iMw2dAnzJ/giphy.gif)
 
