@@ -8,7 +8,7 @@ This application fulfills the users drinking needs.  It allows the user to searc
 #### Brewery Page
 ![brewery-page-demo](https://user-images.githubusercontent.com/61129844/81996308-b187bb00-961a-11ea-8a83-49815417f74a.gif)
 
-![liquor-page-demo](https://media.giphy.com/media/KDDRDLIb9iMw2dAnzJ/200w_d.gif)
+![liquor-page-demo](https://media.giphy.com/media/KDDRDLIb9iMw2dAnzJ/source.mp4)
 ## Presentation Requirements:
 
 Use this project presentation template to address the following:
