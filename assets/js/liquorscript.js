@@ -37,10 +37,12 @@ $(".search-button").on("click", function () {
     });
 
     var inputSearched = $("<p>", {
-      class: "label-text text-center searched-text"
+      class: "label-text text-center searched-text is-size-7-mobile"
     }).text("You searched for: " + ingredientInput);
     
-    var instructionPEl = $("<p>").text("Click an image to view recipe");
+    var instructionPEl = $("<p>", {
+      class: "is-size-6-mobile is-centered"
+    }).text("Click an image to view recipe");
     $(".instruction-div").append(instructionPEl);
     $(".search-div").append(inputSearched);
 
