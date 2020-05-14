@@ -10,6 +10,9 @@ This application fulfills the users drinking needs.  It allows the user to searc
 
 ![liquor-page-demo](https://media.giphy.com/media/KDDRDLIb9iMw2dAnzJ/giphy.gif)
 
+## Credits
+This application uses Bulma as a CSS framework and APIs OpenBreweriesDB, TheCocktailDB, and static GoogleMapsAPI
+
 ## Presentation Requirements:
 
 Use this project presentation template to address the following:
