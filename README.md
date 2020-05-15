@@ -20,40 +20,19 @@ On the Cocktail/Liquor page, the user inputs a drink ingredient and images are d
 #### Brewery Page
 ![brewery-page-demo](https://media.giphy.com/media/l4v2VHuyVYmX7tlSmb/giphy.gif)
 
+#### Cocktail Page
 ![liquor-page-demo](https://media.giphy.com/media/KDDRDLIb9iMw2dAnzJ/giphy.gif)
 
 ## Credits
 This application uses Bulma as a CSS framework and APIs OpenBreweriesDB, TheCocktailDB, Static GoogleMapsAPI, jQuery, and Moment.js
 
-## Presentation Requirements:
-
-Use this project presentation template to address the following:
-
-Elevator pitch: a one minute description of your application
-
-Concept: What is your user story? What was your motivation for development?
-COVID-19
-
-Process: What were the technologies used?
-How were tasks and roles broken down and assigned?
-What challenges did you encounter?
-What were your successes?
-
-Demo: Show your stuff!
-
-Directions for Future Development
-
 ---
 
 Project: ProjectOne
 
-Installation:
-
 Usage: Brewery Finder and Mixed Drink Recipes Application
 
 Credits: John Bouchard, Kaleigh Spurio, Karen Astell, and Lynn Boudreau
-
-License:
 
 Links to the deployed application:
 https://lynnboudreau.github.io/ProjectOne/
