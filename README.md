@@ -9,6 +9,8 @@ This application fulfills the users drinking needs.  It allows the user to searc
 
 ![Entery-Modal-demo](https://media.giphy.com/media/WQI4okMjC7BQohuAzl/giphy.gif)
 
+![Entry-Modal-demo](https://media.giphy.com/media/fYqaI5ZTQeKCHjozbX/giphy.gif)
+
 #### Brewery Page
 ![brewery-page-demo](https://media.giphy.com/media/l4v2VHuyVYmX7tlSmb/giphy.gif)
 
