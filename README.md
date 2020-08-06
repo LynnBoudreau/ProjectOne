@@ -35,9 +35,9 @@ Usage: Brewery Finder and Mixed Drink Recipes Application
 Credits: John Bouchard, Kaleigh Spurio, Karen Astell, and Lynn Boudreau
 
 Links to the deployed application:
-https://lynnboudreau.github.io/Booze-Brews
+https://lynnboudreau.github.io/ProjectOne/
 
 and the GitHub repository:
-https://github.com/LynnBoudreau/Booze-Brews
+https://github.com/LynnBoudreau/ProjectOne/
 
 
